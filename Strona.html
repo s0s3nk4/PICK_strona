@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+    <head>
+        <title>Strona główna</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Opis strony">
+        <meta name="keywords" content="Słowa kluczowe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+        <h1>Historia języków programowania</h1>
+
+        <img src="../../../Submitted%20files/Sosna%20Mateusz/HTML/obraz1.jpg" alt="programowanie">
+        </header>
+
+        <nav>
+        <p style="word-spacing: normal;">Spis treści:</p>
+        <a href="#opis">Opis</a>
+        <a href="#jezyki">Języki</a>
+        <a href="#tabela">Tabela</a>
+        <a href="#formularz">Formularz</a>
+        <a href="#kod" style="word-spacing: normal;">Kod programu</a>
+        </nav>
+
+        <main>
+        <p id="opis" style="font-family: 'Ubuntu', sans-serif;">Pierwszym językiem programowania był <strong>Fortran</strong>, który był stworzony w okresie 1954-1957. Język ten opracował pracownik IBM John Backus wraz z zespołem. Wcześniej jednak opracowano <strong>języki asemblera</strong>, od których zaczęła się historia programowania. Asemblacja to kod maszynowy który powstaje w oparciu o kod źródłowy. Takich języków było sporo, jednak autorką pierwszego była Kathleen Booth, brytyjska matematyczka. Innym językiem asamblowym był <strong>SOAP</strong>, stworzony w 1955r. Fortran był pierwszym prawdziwym językiem programowania, który miał stanowić rewolucyjną zmianę, tak też się stało. Bardzo ważnym językiem był <strong>ALGOL</strong>, na podstawie którego w następnych latach powstał <strong>Pascal</strong>. Kiedy powstał Pascal, język ten powstał z myślą o konieczności tworzenia strukturalnych aplikacji. <strong>Język C</strong>, który został stworzony przez Dennisa Ritchie jest językiem który powstał w 1972r., jest to pierwszy język który można zaliczyć w poczet nowoczesnych języków wysokiego poziomu. W kolejnych latach powstał <strong>SQL</strong>, który jest pod językiem danych, chodzi tutaj o to, że służy jedynie do komunikacji z bazą danych. Najnowszym językiem programowania jest <strong>Swift</strong>, który został rozwinięty przez Apple w 2014r., W założeniu chodziło o to, żeby język ten zastąpił <strong>C, C+ oraz C#</strong>. Język Swift został opracowany by zniwelować liczbę błędów. Jak możemy dostrzec, historia języków programowania pokazuje że programiści tworzyli w oparciu o coś, co już zostało wcześniej stworzyło, nie była tworzona w oderwaniu, więc tak samo kolejne języki będą tworzone o to co już znamy.</p>
+        </main>
+
+        <aside>
+        <h2 id="jezyki">Języki programowania można podzielić na:</h2>
+        <ol>
+            <li id="menu">Rzadko używane</li>
+            <ul>
+                <li>Języki asemblera</li>
+                <li>Fortran</li>
+                <li>ALGOL</li>
+                <li>COBOL</li>
+                <li>Lisp</li>
+                <li>Pascal</li>
+                <li>Język C</li>
+                <li>SQL</li>
+            </ul>
+            <li>Popularne</li>
+            <ul>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Ruby</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>Kotlin</li>
+                <li>Swift</li>
+            </ul>
+        </ol>
+        </aside>
+
+        <article>
+        <dfn>HTML czyli HyperText Markup Language (pol. hipertekstowy język znaczników) - jest to język służący do tworzenia dokumentów hipertekstowych oraz opisywania struktury informacji zawartych wewnątrz strony. Aktualnie obowiązującą wersją HTML jest W3C HTML 5.</dfn>
+                
+        <blockquote>Kłopot z programistami jest taki, że nigdy nie wiadomo, co robią, do czasu, gdy jest za późno.</blockquote>
+        </article>
+
+        <h3>Wzór matematyczny:</h3> <p>x<sup>3</sup>+2y<sup>2</sup>-3z+4&gt5</p>
+        
+        <table id="tabela">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td colspan="2"></td>
+                <td rowspan="2"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <form id="formularz">
+            <label for="imie">Imie:</label><br>
+            <input type="text" id="imie" name="imie"><br>
+            Plec:<br>
+            <input type="radio" id="plec" name="plec" value="M">
+            <label for="plec">M</label>
+            <input type="radio" id="plec" name="plec" value="K">
+            <label for="plec">K</label><br>
+            Komentarz:<br>
+            <textarea name="komentarz" rows="10" cols="30"></textarea>
+        </form>
+        <h2>Przykładowy kod programu</h2>
+        <code id="kod">
+            string imie;<br>
+            cout &lt&lt "Podaj imie: ";<br>
+            cin &gt&gt imie;<br>
+            cin.ignore();<br>
+            cout &lt&lt "Witaj" &lt&lt imie &lt&lt endl;<br>
+            cout &lt&lt "Gratulacje. To Twoj pierwszy program!" &lt&lt endl;<br>
+            cout &lt&lt "Nacisnij ENTER aby zakonczyc" &lt&lt endl;<br>
+            getchar();<br>
+            return 0;>
+        </code>
+        <footer>
+        <p>Źródło: <a href="https://jaki-komputer.pl/historia-programowania-co-warto-wiedziec/">Historia programowania</a><br><br>
+        Stronę wykonał: &copy Mateusz Sosna</p>
+        </footer>
+
+    </body>
+    
+</html>
